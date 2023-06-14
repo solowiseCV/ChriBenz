@@ -1,0 +1,112 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: #1d1d1d;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        margin-right: 20px;
+        padding: 10px;
+        height: 100%;
+        .left{
+            display: flex;
+            .logoLink{
+                text-decoration: none;
+                .logo{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 800;
+                    cursor: pointer;
+                }
+            }
+            
+           
+            .dot{
+                font-size: 30px;
+                font-weight: 500;
+                color: yellowgreen;
+            }
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            flex: 1;
+            .searchInput{
+                width: 100%;
+                padding: 10px;
+                border: none;
+                outline: none;
+                margin-left: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .searchInputIcon{
+               background-color: orange;
+               color: grey;
+               height: 34px;
+               font-size: 10px;
+               width: 40px;
+               border-top-right-radius:20px ;
+               border-bottom-right-radius:20px ;
+
+            }
+        }
+        .right{
+            display: flex;
+            margin-left: 10px;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-around;
+            
+                .options{
+                    display: flex;
+                    flex-direction: column;
+                    .links{
+                        display: flex;
+                        flex-direction: column;
+                        color: white;
+                        text-decoration: none;
+
+                        .optionOne{
+                            font-weight: 300;
+                            font-size: 12px;
+                        }
+                        .optionTwo{
+                            font-weight: 500;
+                        } 
+                    }
+                  
+                }
+                .optionBasket{
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .linksIcon{
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        color: white;
+                        .basket{
+                            color: white;
+
+                        }
+                        .numberOfItems{}
+                    }
+                }
+            
+        }
+    }
+}
